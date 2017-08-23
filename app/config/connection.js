@@ -12,6 +12,7 @@ var sequelize = new Sequelize("tipple", "root", "", {
   }
 });
 
+
 sequelize
   .authenticate()
   .then(() => {
@@ -20,6 +21,7 @@ sequelize
   .catch(err => {
     console.error('Unable to connect to the database:', err);
   });
+
 
 // Exports the connection for other files to use
 module.exports = sequelize;
