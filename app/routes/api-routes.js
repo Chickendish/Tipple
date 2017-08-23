@@ -1,7 +1,6 @@
 
-var Cocktail = require("../models/cocktail.js");
-
+var tipple = require("../models/home.js");
 
 module.exports = function(app){
-	
+
 }
