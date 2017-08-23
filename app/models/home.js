@@ -11,7 +11,7 @@ var tipple = sequelize.define("cocktail", {
     primaryKey:true
   },
   name: {
-    type.Sequelize.STRING,
+    type:Sequelize.STRING,
   },
   ingredient1: {
    type:Sequelize.STRING
