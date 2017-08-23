@@ -22,14 +22,14 @@ var tipple = sequelize.define("cocktail", {
     type:Sequelize.STRING
   },
 
-  ingredient4: { 
+  mixer: { 
     type:Sequelize.STRING
   }, 
-  ingredient5: { 
+  garnish: { 
     type:Sequelize.STRING
   },
-  ingredient6: { 
-    type:Sequelize.STRING
+  measure: { 
+    type:Sequelize.INTEGER
 }
 
 }, 
