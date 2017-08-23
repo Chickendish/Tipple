@@ -3,7 +3,9 @@
 var Sequelize = require("sequelize");
 // Require the connection to the database (connection.js)
 var sequelize = require("../config/connection.js");
+
 // Create a cocktails table on tipple database 
+
 var tipple = sequelize.define("cocktail", {
   id:{
     type:Sequelize.INTEGER,
@@ -12,31 +14,34 @@ var tipple = sequelize.define("cocktail", {
   },
 
   name: {
+    type:Sequelize.STRING,
+  },
+  ingredient1: {
    type:Sequelize.STRING
-  }, 
-  ingredient2: { 
-    type:Sequelize.STRING
-  }, 
-
-  ingredient3: { 
+  },
+  ingredient2: {
     type:Sequelize.STRING
   },
 
-  mixer: { 
-    type:Sequelize.STRING
-  }, 
-  garnish: { 
+  ingredient3: {
     type:Sequelize.STRING
   },
-  measure: { 
+
+  mixer: {
+    type:Sequelize.STRING
+  },
+  garnish: {
+    type:Sequelize.STRING
+  },
+  measure: {
     type:Sequelize.INTEGER
 }
 
-}, 
+},
 {
   timestamps: true
 });
-// Sync 
+// Sync
 tipple.sync();
-// Export 
+// Export
 module.exports = tipple;
