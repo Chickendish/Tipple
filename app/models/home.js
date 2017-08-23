@@ -4,7 +4,7 @@ var Sequelize = require("sequelize");
 // Require the connection to the database (connection.js)
 var sequelize = require("../config/connection.js");
 // Create a recipe table on homemade database 
-var Food = sequelize.define("recipe", {
+var tipple = sequelize.define("cocktail", {
   id:{
     type:Sequelize.INTEGER,
     autoIncrement:true,
@@ -37,6 +37,6 @@ var Food = sequelize.define("recipe", {
   timestamps: true
 });
 // Sync 
-Food.sync();
+tipple.sync();
 // Export 
-module.exports = Food;
+module.exports = tipple;
