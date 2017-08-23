@@ -1,3 +1,27 @@
-h1 {
+/*.jumbotron {
 	color: red;
+}
+.submit{
+	margin-left: 10%;
+	margin-top: 10px;
+}
+
+.create {
+	margin-left: 25%;
+}
+*/
+.form-control {
+	margin-left: 30%;
+    margin-top: 10px;
+  	width:40%;
+}
+
+#first-text{
+	margin-top: 10px;
+}
+#add-btn {
+	margin-bottom: 10px;
+}
+#see-button{
+	margin-left: 45%;
 }
