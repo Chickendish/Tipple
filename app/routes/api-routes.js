@@ -1,4 +1,6 @@
-var Food = require("../models/home.js");
+
+var Cocktail = require("../models/cocktail.js");
+
 
 module.exports = function(app){
 	
