@@ -3,7 +3,7 @@
 var Sequelize = require("sequelize");
 // Require the connection to the database (connection.js)
 var sequelize = require("../config/connection.js");
-// Create a recipe table on homemade database 
+// Create a cocktails table on tipple database 
 var tipple = sequelize.define("cocktail", {
   id:{
     type:Sequelize.INTEGER,
@@ -11,7 +11,7 @@ var tipple = sequelize.define("cocktail", {
     primaryKey:true
   },
 
-  ingredient1: {
+  name: {
    type:Sequelize.STRING
   }, 
   ingredient2: { 
