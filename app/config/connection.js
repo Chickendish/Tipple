@@ -1,7 +1,8 @@
+
 // Dependencies
 var Sequelize = require("sequelize");
 // Creates mySQL connection using Sequelize
-var sequelize = new Sequelize("Tipple", "root", "", {
+var sequelize = new Sequelize("homemade", "root", "", {
   host: "localhost",
   dialect: "mysql",
   pool: {
@@ -10,6 +11,7 @@ var sequelize = new Sequelize("Tipple", "root", "", {
     idle: 10000
   }
 });
+
 
 // Exports the connection for other files to use
 module.exports = sequelize;
