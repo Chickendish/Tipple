@@ -1,21 +1,33 @@
 {
-  "name": "tipple",
+  "name": "homemade",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mysql": "^2.14.1",
+    "sequelize": "^4.6.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wcwhite71/Tipple.git"
+    "url": "git+https://github.com/HayelomR/Homemade.git"
   },
-  "authors": "Hayelom Reda, Bill Donovan, William White",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wcwhite71/Tipple/issues"
+    "url": "https://github.com/HayelomR/Homemade/issues"
   },
+<<<<<<< HEAD
+  "homepage": "https://github.com/HayelomR/Homemade#readme"
+=======
   "homepage": "https://github.com/wcwhite71/Tipple#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -26,4 +38,5 @@
     "mysql2": "^1.4.1",
     "sequelize": "^4.7.0"
   }
+>>>>>>> 0c9ed88a515893a72054e76be2cecc8c39b29393
 }
