@@ -1,0 +1,4 @@
+DROP DATABASE IF EXISTS tipple;
+CREATE DATABASE tipple;
+
+USE tipple;
