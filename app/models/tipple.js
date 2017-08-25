@@ -45,7 +45,7 @@ var tipple = sequelize.define("cocktail", {
   },
 
   strIngredient6: {
-   type:Sequel
+   type:Sequelize.STRING
   },
  
   strMeasure1: {
@@ -73,7 +73,7 @@ var tipple = sequelize.define("cocktail", {
   },
 
   timestamps: true
-  
+
 });
 
 // Sync
