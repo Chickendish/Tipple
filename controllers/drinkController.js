@@ -1,8 +1,8 @@
-// var express = require("express");
+var express = require("express");
 
-// var router = express.Router();
+var router = express.Router();
 
-// // Import the model (cat.js) to use its database functions.
-// var Drinks = require("../models/drink.js");
+// Import the model (cat.js) to use its database functions.
+var Drinks = require("../models/drink.js");
 
-// Create all our routes and set up logic within those routes where required.
+var db = require("../models");
