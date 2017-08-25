@@ -24,7 +24,6 @@ var tipple = sequelize.define("cocktail", {
     type:Sequelize.TEXT
   },
 
-<<<<<<< HEAD
   strIngredient1: {
    type:Sequelize.STRING
   },
@@ -42,48 +41,13 @@ var tipple = sequelize.define("cocktail", {
   },
 
   strIngredient5: {
-=======
-  ingredient1: {
    type:Sequelize.STRING
   },
 
-  quantity1: {
-    type:Sequelize.DECIMAL
-  },
-
-  ingredient2: {
-    type:Sequelize.STRING
-  },
-
-  quantity2: {
-    type:Sequelize.DECIMAL
-  },
-
-  ingredient3: {
-    type:Sequelize.STRING
-  },
-
-  quantity3: {
-    type:Sequelize.DECIMAL
-  },
-
-  ingredient4: {
-    type:Sequelize.STRING
-  },
-
-  quantity4: {
-    type:Sequelize.DECIMAL
-  },
-
-  mixer: {
->>>>>>> 43301b48cf43af905de4654f2e5d86452b83d46c
-    type:Sequelize.STRING
-  },
-
   strIngredient6: {
-    type:Sequelize.STRING
+   type:Sequel
   },
-
+ 
   strMeasure1: {
     type:Sequelize.INTEGER
   },
