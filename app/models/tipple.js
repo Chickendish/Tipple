@@ -72,9 +72,8 @@ var tipple = sequelize.define("cocktail", {
     type:Sequelize.INTEGER
   },
 
-  {
   timestamps: true
-  }
+  
 });
 
 // Sync
