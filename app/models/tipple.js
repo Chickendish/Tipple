@@ -14,10 +14,6 @@ var tipple = sequelize.define("cocktail", {
 
   strDrink: {
     type:Sequelize.STRING,
-    validate: {
-      notNull: true,
-      isAlphanumeric: true
-    }
   },
 
   strInstructions: {
@@ -72,8 +68,8 @@ var tipple = sequelize.define("cocktail", {
     type:Sequelize.INTEGER
   },
 
-  timestamps: true
-
+      createdAt: Sequelize.DATE,
+      updatedAt: Sequelize.DATE,
 });
 
 // Sync
