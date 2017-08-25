@@ -33,9 +33,8 @@ var tipple = sequelize.define("cocktail", {
   },
   measure: {
     type:Sequelize.INTEGER
-}
-
 },
+
 {
   timestamps: true
 });
