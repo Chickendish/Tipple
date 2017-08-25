@@ -16,12 +16,12 @@
 <div class="container">
 	<div class="jumbotron text-center">
 		<h1 id="title"><span <i class="fa fa-glass" aria-hidden="true"></i> Tipple!</span></h1>
-		<p class="head">You've got some booze and now you need ideas.</p>	
+		<p class="head">You've got some booze and now you need ideas.</p>
 	</div>
 	<div class="container text-center">
 		<h1>What booze have you got?</h1>
 		<form>
-			<textarea class="form-control" placeholder="Enter your ingidrent here Here!" rows="3" class="col-sm-8" ></textarea>
+			<textarea class="form-control" id = "userIngredient" placeholder="Enter your ingredient here Here!" rows="3" class="col-sm-8" ></textarea>
 		</form>
 
 		<br>
@@ -39,3 +39,40 @@
 </div>
 </body>
 </html>
+
+<script>
+$("#add-btn").on("click", function(event) {
+	var userChoice = $('#userIngredient').val();
+	//console.log('user choice: ' + userChoice);
+		$.ajax({
+		    url: 'http://www.thecocktaildb.com/api/json/v1/1/search.php?s='+userChoice,
+		    headers: {
+		        'Content-Type': 'application/x-www-form-urlencoded'
+		    },
+		    type: "POST", /* or type:"GET" or type:"PUT" */
+		    dataType: "json",
+		    success: function (result) {
+		        //console.log(result);
+						$.each(result,function(index,data){
+							 for (var i=0; i<data.length; i++) {
+								 console.log("-----------------------------------------");
+								 console.log("name: " + data[i].strDrink);
+								 console.log("ingredient 1: " + data[i].strIngredient1);
+								 console.log("measure 1: " + data[i].strMeasure1);
+								 console.log("ingredient 2: " + data[i].strIngredient2);
+								 console.log("measure 2: " + data[i].strMeasure2);
+								 console.log("ingredient 3: " + data[i].strIngredient3);
+								 console.log("measure 3: " + data[i].strMeasure3);
+								 console.log("ingredient 4: " + data[i].strIngredient4);
+								 console.log("measure 4: " + data[i].strMeasure4);
+								 console.log("instructions: " + data[i].strInstructions);
+								 console.log("-----------------------------------------");
+							 }
+						})
+		    },
+		    error: function () {
+		        console.log("error");
+		    }
+		});
+});
+</script>
