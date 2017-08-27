@@ -10,7 +10,6 @@ var tipple = sequelize.define("cocktail", {
     autoIncrement:true,
     primaryKey:true
   },
-
   name: {
     type:Sequelize.STRING
   },
