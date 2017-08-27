@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
 <head>
-	<title>list of cocktails </title>
+	<title>search of cocktails </title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery.js"></script>
@@ -11,11 +11,16 @@
 </head>
 <body>
 	<div class="jumbotron text-center">
-		<h1 id="list-head">Our List of Cocktails <span><i class="fa fa-smile-o" aria-hidden="true"></i></span></h1>
+		<h1 id="list-head"> Below is the cocktail you are looking for <span><i class="fa fa-smile-o" aria-hidden="true"></i></span></h1>
 	</div>
+	<div class="container" id="search-color">
 	<!-- this will be the section that our drinks will be displayed -->
-	<div id="cocktails-list"></div>
+	<div id="cocktail-search"></div>
+	<!-- place the bars here if drinks are not found -->
+	<div id="bar-search"></div>
+	</div>
+
 	<!-- Connect Script -->
-	<script src="js/list.js" type="text/javascript"></script>
+	<script src="js/search.js" type="text/javascript"></script>
 </body>
 </html>
