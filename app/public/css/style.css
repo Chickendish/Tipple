@@ -1,27 +1,92 @@
 body{
-	 background-image: url("../images/img.jpg");
-	 
+	background-image: url("../images/img.jpg");
+
+}
+#list-head {
+	font-family: 'Marck Script', cursive;
+}
+
+.drink-suggestion {
+	background-color: black;
+	margin-left: 20px;
+	color:white;
+}
+
+h3 {
+	color:red;
+}
+.form-control2 {
+	margin-bottom: -10px;
+	width:110%;
+}
+.show-names {
+	margin-left: 100px;
+	color:black;
+	font-family: 'Marck Script', cursive;
+}
+.drink-name {
+	margin-right: 70%;
+	background-color: white;
+	font-size: 24px;
+}
+.show-recipes {
+	margin-left: 100px;
+	border-radius: 100px;
+	color:white;
+	width: 10%;
+	background-color: green;
+
 }
 
 h1 {
-	color: white;
+	margin-top: 0px;
+	font-size: 28px;
+	color: #DAA520;
+}
+h2 {
+	margin-left: 100px;
+	font-family: 'Marck Script', cursive;
+	background-color: green;
+	margin-top: 0px;
+	font-size: 34px;
+	color: #DAA520;
+
 }
 .jumbotron{
-	margin-top: 20px;
+	margin-top: 2px;
+}
+.search-section {
+	float: left;
+}
+#create-drink{
+	float: left;
+	margin-left: 300px;
+	font-family: 'Marck Script', cursive;
+	margin-left: 200px;
 }
 .cool-font {
-	color:black;
-	font-size: 24px;
+	clear:both;
+	width: 110%;
+	font-family: 'Marck Script', cursive;
+	background-color: green;
+	color: #DAA520;
+	font-size: 28px;
 	font-weight: bold;
 }
+
 #choose {
-	font-size: 24px;
-	color: green;
+	margin-left: 300px;
+	width: 50%;
+	font-family: 'Marck Script', cursive;
+	background-color: green;
+	margin-top: 30px;
+	font-size: 28px;
+	color: #DAA520;
 	font-weight: bolder;
 }
 
 #title {
-	 color:	#DAA520;
+	color:	#DAA520;
 }
 .head {
 	font-family: 'Dancing Script', cursive;
@@ -29,9 +94,10 @@ h1 {
 	color: black;
 }
 .form-control {
-	margin-left: 30%;
-    margin-top: 10px;
-  	width:40%;
+	margin-left: 100px;
+	font-family: 'Marck Script', cursive;
+	margin-top: 10px;
+	width:80%;
 }
 
 #add-btn{
@@ -40,32 +106,49 @@ h1 {
 	font-weight: 600;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	border-radius: 100px;
-	    min-width: 16em;
-/*	background-color: #21abc7;*/
+	min-width: 16em;
+	/*	background-color: #21abc7;*/
 	font-size: 100%;
-    line-height: 2.7;
+	line-height: 2.7;
 	
 }
 #create-btn {
+	margin-left: 50px;
 	margin-bottom: 10px;
 	border: 1px solid #21abc7;
 	font-weight: 600;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	border-radius: 100px;
-	    min-width: 16em;
-/*	background-color: #21abc7;*/
+	min-width: 16em;
+	/*	background-color: #21abc7;*/
 	font-size: 100%;
-    line-height: 2.7;
+	line-height: 2.7;
 	
+} 
+p {
+	/*background-color: white;
+    margin-right: 70%;*/
+}
+
+#search-name-btn {
+	border: 1px solid #21abc7;
+	font-weight: 600;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	border-radius: 100px;
+	min-width: 16em;
+	/*	background-color: #21abc7;*/
+	font-size: 100%;
+	line-height: 2.7;
+	margin-left: 30%;
 }
 #see-button{
 	border: 1px solid #21abc7;
 	font-weight: 600;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	border-radius: 100px;
-	    min-width: 16em;
-/*	background-color: #21abc7;*/
+	min-width: 16em;
+	/*	background-color: #21abc7;*/
 	font-size: 100%;
-    line-height: 2.7;
+	line-height: 2.7;
 	margin-left: 40%;
 }
