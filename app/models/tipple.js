@@ -1,16 +1,6 @@
 
-// Require the sequelize library
-var Sequelize = require("sequelize");
-// Require the connection to the database (connection.js)
-var sequelize = require("../config/connection.js");
-// Create a cocktails table on tipple database
-var tipple = sequelize.define("cocktail", {
-  id:{
-    type:Sequelize.INTEGER,
-    autoIncrement:true,
-    primaryKey:true
-  },
 
+<<<<<<< HEAD
   name: {
     type:Sequelize.STRING,
   },
@@ -64,3 +54,5 @@ var tipple = sequelize.define("cocktail", {
 // });
 // Export
 module.exports = tipple;
+=======
+>>>>>>> 196026aeaa4cddd697122595ba7bcc7ac9bdb7e5
