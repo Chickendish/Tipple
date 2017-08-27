@@ -1,6 +1,6 @@
 
 
-<<<<<<< HEAD
+
   name: {
     type:Sequelize.STRING,
   },
@@ -54,5 +54,4 @@
 // });
 // Export
 module.exports = tipple;
-=======
->>>>>>> 196026aeaa4cddd697122595ba7bcc7ac9bdb7e5
+
