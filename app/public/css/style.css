@@ -25,6 +25,8 @@ h3 {
 	font-family: 'Marck Script', cursive;
 }
 .drink-name {
+	margin-right: 70%;
+	background-color: white;
 	font-size: 24px;
 }
 .show-recipes {
@@ -123,6 +125,10 @@ h2 {
 	line-height: 2.7;
 	
 } 
+p {
+	/*background-color: white;
+    margin-right: 70%;*/
+}
 
 #search-name-btn {
 	border: 1px solid #21abc7;
