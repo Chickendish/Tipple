@@ -42,11 +42,12 @@ app.post("/api/new/:cocktails", function(req, res) {
 	cocktails.create({
 		name: req.body.title,
 		ingredient1: req.body.ingredient1,
-		ingredient2: req.body.ingredient1,
-		ingredient3: req.body.ingredient1,
-		mixer:req.body.mixer,
-		garnish:req.body.garnish,
-		measure:req.body.measure
+		ingredient2: req.body.ingredient2,
+		ingredient3: req.body.ingredient3,
+		ingredient4:req.body.ingredient4,
+		ingredient5:req.body.ingredient5,
+		ingredient6:req.body.ingredient6,
+		Instruction:req.body.Instruction
 
 	});
 });
