@@ -2,22 +2,70 @@ body{
 	background-image: url("../images/img.jpg");
 
 }
+li {
+	margin-left: 10px;
+}
+.bar-search {
+	background: green;
+	font-size: 24px;
+	color:white;
+	margin-left: 100px;
+	font-family: 'Marck Script', cursive;
+}
 #list-head {
 	font-family: 'Marck Script', cursive;
 }
 .advise {
 	color:white;
 }
+.your-drink {
+	margin-right: 5%;
+	color:white;
+	background-color: green;
+	font-family: 'Marck Script', cursive;
+	font-size: 34px;
+	font-weight:bold;
+}
+h6 {
+	margin-right: 5%;
+	font-family: 'Marck Script', cursive;
+	background-color: green;
+	margin-top: 0px;
+	font-size: 40px;
+	color: #DAA520;
+
+
+}
+.what-toDo {
+	color:black;
+}
+.cocktail-created {
+
+	float: left;
+
+}
+.list {
+	clear: both;
+	font-family: 'Marck Script', cursive;
+	color:white;
+
+}
+.drinkName {
+	margin-top: 10px;
+	font-family: 'Marck Script', cursive;
+	text-align: center;
+}
 .drink-suggestion {
-	background-color: black;
+	background-color: green;
 	margin-left: 20px;
+	font-size: 24px;
 	color:white;
 }
 .form-control1 {
-    margin-left: 50px;
-    font-family: 'Marck Script', cursive;
-    /* margin-top: 10px; */
-    width: 80%;
+	margin-left: 50px;
+	font-family: 'Marck Script', cursive;
+	/* margin-top: 10px; */
+	width: 80%;
 }
 .panel{
 	margin-left: 20px;
@@ -26,7 +74,7 @@ body{
 }
 
 h3 {
-	color:red;
+	color:black;
 }
 .form-control2 {
 	margin-bottom: -10px;
@@ -38,7 +86,9 @@ h3 {
 	font-family: 'Marck Script', cursive;
 }
 .drink-name {
-	margin-right: 70%;
+	font-family: sans-serif;
+	margin-top: 20px;
+	margin-right: 40%;
 	background-color: white;
 	font-size: 24px;
 }
@@ -46,9 +96,11 @@ h3 {
 	margin-left: 100px;
 	border-radius: 100px;
 	color:white;
-	width: 10%;
 	background-color: green;
 
+}
+#display {
+	margin-top: 30%;
 }
 
 h1 {
@@ -138,10 +190,15 @@ h2 {
 	line-height: 2.7;
 	
 } 
-p {
-	/*background-color: white;
-    margin-right: 70%;*/
+#cocktails-list{
+	    width: 40%;
+    font-size: 24px;
+    margin-right: 40%;
+    background-color: blue;
+    margin-left: 100px;
 }
+
+
 
 #search-name-btn {
 	border: 1px solid #21abc7;
