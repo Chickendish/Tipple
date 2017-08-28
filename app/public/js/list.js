@@ -21,13 +21,13 @@ for (var i = 0; i < data.length; i++) {
 $("#display" + i).append("<p class = 'drink-name'>" + (i + 1) + ". " + data[i].name + "</p>");
 $(".show-recipes").on("click",function(){
     var i = $(this).attr("data-i");
-    $(".show-recipes" + i).append("<p> :ingredient1 " + data[i].ingredient1 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient2 " + data[i].ingredient2 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient3 " + data[i].ingredient3 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient4 " + data[i].ingredient4 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient5 " + data[i].ingredient5 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient6 " + data[i].ingredient6 + "</p>");
-    $(".show-recipes" + i).append("<p> :Instruction " + data[i].Instruction + "</p>");
+    $(".show-recipes" + i).append("<p> ingredient1 " + data[i].ingredient1 + "</p>");
+    $(".show-recipes" + i).append("<p> ingredient2 " + data[i].ingredient2 + "</p>");
+    $(".show-recipes" + i).append("<p> ingredient3 " + data[i].ingredient3 + "</p>");
+    $(".show-recipes" + i).append("<p> ingredient4 " + data[i].ingredient4 + "</p>");
+    $(".show-recipes" + i).append("<p> ingredient5 " + data[i].ingredient5 + "</p>");
+    $(".show-recipes" + i).append("<p> ingredient6 " + data[i].ingredient6 + "</p>");
+    $(".show-recipes" + i).append("<p> Instruction " + data[i].Instruction + "</p>");
 
 })
 }
