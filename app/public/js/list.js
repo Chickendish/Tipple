@@ -9,8 +9,8 @@ for (var i = 0; i < data.length; i++) {
     drink.addClass("show-names show-recipes"+i);
     button.text("Show-Recipes");
     // Add an id 
-    drink.attr("id", "display" + i);
-    button.addClass("show-recipes");
+    drink.attr("id","display" + i);
+    button.addClass("button show-recipes");
     button.attr("data-i", i);
     $(".show-recipes").attr("src", data);
     // Append this to a cocktailist

@@ -1,4 +1,3 @@
-
 $(document).ready(function(event) {
   // event.preventDefault();
   var url = window.location.href;
@@ -13,9 +12,7 @@ $(document).ready(function(event) {
         method: "GET"
       }).done(function(response) {
         if (response.drinks == undefined || response.drinks.length < 1) {
-          // var drinks = '';
-          
-          //$("#bar-search").text("Sorry " + " we don't have that drink..try the following bars");
+          $(".bar-search").text("Sorry " + " we don't have that drink..please try the following local bars.");
           barSearch();
           return ;
 
@@ -26,7 +23,7 @@ $(document).ready(function(event) {
           <div class="drink-suggestion col-md-6">
           <h1 class = "drinkName">${currentDrink.strDrink}</h1>
                                  <hr>
-            <di class="list">
+            <div class="list">
             <h4 class="text-center">Ingridents needed</h4>
           <div>${currentDrink.strIngredient1}</div>
           <div>${currentDrink.strIngredient2}</div>
@@ -95,12 +92,6 @@ function barSearch() {
  
   
 };
-
-
-
-
-
-
 
 
 
