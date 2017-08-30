@@ -9,9 +9,9 @@ for (var i = 0; i < data.length; i++) {
     drink.addClass("show-names show-recipes"+i);
     button.text("Show-Recipes");
     // Add an id 
-    drink.attr("id", "display" + i);
-    button.addClass("show-recipes");
-    button.attr("data-i", i);
+    drink.attr("id","display" + i);
+    button.addClass("button show-recipes");
+    button.attr("data-i", i + 1);
     $(".show-recipes").attr("src", data);
     // Append this to a cocktailist
     $("#cocktails-list").append(drink); 
@@ -19,16 +19,24 @@ for (var i = 0; i < data.length; i++) {
 //add the the name of drinks to our page
 // only the name of drink because we want to crate a link here to the recipes
 $("#display" + i).append("<p class = 'drink-name'>" + (i + 1) + ". " + data[i].name + "</p>");
-$(".show-recipes").on("click",function(){
-    var i = $(this).attr("data-i");
-    $(".show-recipes" + i).append("<p> :ingredient1 " + data[i].ingredient1 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient2 " + data[i].ingredient2 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient3 " + data[i].ingredient3 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient4 " + data[i].ingredient4 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient5 " + data[i].ingredient5 + "</p>");
-    $(".show-recipes" + i).append("<p> :ingredient6 " + data[i].ingredient6 + "</p>");
-    $(".show-recipes" + i).append("<p> :Instruction " + data[i].Instruction + "</p>");
-
-})
 }
+});
+
+$("#cocktails-list").on("click", ".show-recipes", function(){
+    //console.log($(this).attr("data-name"));
+    var id = $(this).attr("data-i");
+    $.get("/api/" + id, function(data) {
+    })
+    .done(function(cocktail) {
+        // console.log(cocktail[0].Instruction);
+        var id = cocktail[0].id - 1;
+        $(".show-recipes" + id).append("<p> ingredient1, " + cocktail[0].ingredient1 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient2, " + cocktail[0].ingredient2 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient3, " + cocktail[0].ingredient3 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient4, " + cocktail[0].ingredient4 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient5, " + cocktail[0].ingredient5 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient6, " + cocktail[0].ingredient6 + "</p>");
+        $(".show-recipes" + id).append("<p> Instruction, " + cocktail[0].Instruction + "</p>");
+
+    });
 });

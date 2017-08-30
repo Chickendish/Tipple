@@ -41,7 +41,7 @@ Instruction: {
 {
   timestamps: false
 });
-// Sync
+// // Sync
 // tipple.sync({
 //   force: true
 // }).then(function() {
@@ -158,5 +158,9 @@ Instruction: {
 //     Instruction:"In a Collins glass, muddle the lime juice with 1/2 to 1 tsp of sugar. Add the mint leaves and mash against the side of the glass. Fill glass 2/3 full with cracked ice and pour in the rum. pour lime. Top off with club soda. "
 //   });
 // });
+
+// Syncs with DB
+tipple.sync();
+
 // Export
 module.exports = tipple;

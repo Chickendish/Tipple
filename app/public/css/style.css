@@ -2,18 +2,85 @@ body{
 	background-image: url("../images/img.jpg");
 
 }
+li {
+	margin-left: 10px;
+}
+.bar-list {
+	padding-top: 5px;
+	margin:20px;
+}
+
+
+.bar-search {
+	    width: 50%;
+	background: green;
+	font-size: 24px;
+	color:white;
+	margin-left: 100px;
+	font-family: 'Marck Script', cursive;
+}
 #list-head {
 	font-family: 'Marck Script', cursive;
 }
-
-.drink-suggestion {
-	background-color: black;
-	margin-left: 20px;
+.advise {
 	color:white;
+}
+.your-drink {
+	margin-right: 5%;
+	color:white;
+	background-color: green;
+	font-family: 'Marck Script', cursive;
+	font-size: 34px;
+	font-weight:bold;
+}
+h6 {
+	margin-right: 5%;
+	font-family: 'Marck Script', cursive;
+	background-color: green;
+	margin-top: 0px;
+	font-size: 40px;
+	color: #DAA520;
+
+
+}
+.what-toDo {
+	color:black;
+}
+.cocktail-created {
+
+	float: left;
+
+}
+.list {
+	clear: both;
+	font-family: 'Marck Script', cursive;
+	color:white;
+
+}
+.drinkName {
+	margin-top: 10px;
+	font-family: 'Marck Script', cursive;
+	text-align: center;
+}
+.drink-suggestion {
+	background-color: green;
+	margin-left: 20px;
+	font-size: 24px;
+	color:white;
+}
+.form-control1 {
+	margin-left: 50px;
+	/* margin-top: 10px; */
+	width: 80%;
+}
+.panel{
+	margin-left: 20px;
+	height: 80%;
+
 }
 
 h3 {
-	color:red;
+	color:black;
 }
 .form-control2 {
 	margin-bottom: -10px;
@@ -21,21 +88,25 @@ h3 {
 }
 .show-names {
 	margin-left: 100px;
-	color:black;
+	color:white;
 	font-family: 'Marck Script', cursive;
 }
 .drink-name {
-	margin-right: 70%;
-	background-color: white;
+	font-family: sans-serif;
+	margin-top: 20px;
+	margin-right: 40%;
+
 	font-size: 24px;
 }
 .show-recipes {
 	margin-left: 100px;
 	border-radius: 100px;
 	color:white;
-	width: 10%;
 	background-color: green;
 
+}
+#display {
+	margin-top: 30%;
 }
 
 h1 {
@@ -44,7 +115,9 @@ h1 {
 	color: #DAA520;
 }
 h2 {
-	margin-left: 100px;
+	    width: 100%;
+	    padding: 10px;
+    margin-left: 80px;
 	font-family: 'Marck Script', cursive;
 	background-color: green;
 	margin-top: 0px;
@@ -95,9 +168,8 @@ h2 {
 }
 .form-control {
 	margin-left: 100px;
-	font-family: 'Marck Script', cursive;
 	margin-top: 10px;
-	width:80%;
+	width:90%;
 }
 
 #add-btn{
@@ -125,10 +197,15 @@ h2 {
 	line-height: 2.7;
 	
 } 
-p {
-	/*background-color: white;
-    margin-right: 70%;*/
+#cocktails-list{
+	    width: 40%;
+    font-size: 24px;
+    margin-right: 40%;
+    background-color: blue;
+    margin-left: 100px;
 }
+
+
 
 #search-name-btn {
 	border: 1px solid #21abc7;
@@ -151,4 +228,38 @@ p {
 	font-size: 100%;
 	line-height: 2.7;
 	margin-left: 40%;
+}
+/*media query for ipad*/
+@media screen and (max-width: 768px){
+  h1{
+    
+}
+
+}
+
+/*media query for iphone 6 plus*/
+@media screen and (max-width: 414px){
+  .form-control{
+ margin-left:50px;
+
+  }
+  h2 {
+  	margin-left: 50px;
+  }
+#search-name-btn  {
+	margin-left: 40px;
+}
+
+
+
+}
+
+/*media query for iphone 6 */
+@media screen and (max-width: 375px) {
+  h1 {
+
+    
+
+  }
+
 }
