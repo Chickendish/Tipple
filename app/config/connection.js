@@ -22,6 +22,7 @@ sequelize
     console.error('Unable to connect to the database:', err);
   });
 
+// heroku connection will be here
 
 // Exports the connection for other files to use
 module.exports = sequelize;
