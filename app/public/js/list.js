@@ -28,15 +28,15 @@ $("#cocktails-list").on("click", ".show-recipes", function(){
     $.get("/api/" + id, function(data) {
     })
     .done(function(cocktail) {
-        console.log(cocktail[0].Instruction);
+        // console.log(cocktail[0].Instruction);
         var id = cocktail[0].id - 1;
-        $(".show-recipes" + id).append("<p> ingredient1 " + cocktail[0].ingredient1 + "</p>");
-        $(".show-recipes" + id).append("<p> ingredient1 " + cocktail[0].ingredient2 + "</p>");
-        $(".show-recipes" + id).append("<p> ingredient1 " + cocktail[0].ingredient3 + "</p>");
-        $(".show-recipes" + id).append("<p> ingredient1 " + cocktail[0].ingredient4 + "</p>");
-        $(".show-recipes" + id).append("<p> ingredient1 " + cocktail[0].ingredient5 + "</p>");
-        $(".show-recipes" + id).append("<p> ingredient1 " + cocktail[0].ingredient6 + "</p>");
-        $(".show-recipes" + id).append("<p> Instruction " + cocktail[0].Instruction + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient1, " + cocktail[0].ingredient1 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient2, " + cocktail[0].ingredient2 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient3, " + cocktail[0].ingredient3 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient4, " + cocktail[0].ingredient4 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient5, " + cocktail[0].ingredient5 + "</p>");
+        $(".show-recipes" + id).append("<p> ingredient6, " + cocktail[0].ingredient6 + "</p>");
+        $(".show-recipes" + id).append("<p> Instruction, " + cocktail[0].Instruction + "</p>");
 
     });
 });
