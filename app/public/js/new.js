@@ -14,6 +14,11 @@ $("#create-cocktail").on("click", function(event) {
     ingredient6: $("#ingredient6").val().trim(),
     Instruction: $("#Instruction").val().trim()
   };
+  
+
+$.post("/api/new", newDrink)
+.done(function(data) {
+});
   // lets display this on the page
 $.get("/api/all", function(data) {
 
@@ -41,10 +46,6 @@ $.get("/api/all", function(data) {
 });
 
 
-
-$.post("/api/new", newDrink)
-.done(function(data) {
-});
 // empty the box
 $("#name").val("");
 $("#ingredient1").val("");

@@ -41,7 +41,7 @@ Instruction: {
 {
   timestamps: false
 });
-// Sync
+// // Sync
 // tipple.sync({
 //   force: true
 // }).then(function() {
