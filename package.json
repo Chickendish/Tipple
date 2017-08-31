@@ -10,7 +10,8 @@
     "handlebars": "^4.0.10",
     "howler": "^2.0.4",
     "mysql2": "^1.4.1",
-    "sequelize": "^4.7.2"
+    "sequelize": "^4.7.2",
+    "sequelize-heroku": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {

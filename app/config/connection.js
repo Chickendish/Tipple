@@ -22,6 +22,16 @@ sequelize
     console.error('Unable to connect to the database:', err);
   });
 
+// if (process.env.JAWSDB_URL){
+//   connection = sequelize.createConnection(process.env.JAWSDB_URL);
+// } else {
+//   connection = sequelize.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password: '',
+//     database: 'tipple'
+//   });
+// };
 
 // Exports the connection for other files to use
 module.exports = sequelize;
