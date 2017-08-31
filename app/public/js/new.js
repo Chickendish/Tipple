@@ -35,6 +35,7 @@ $.get("/api/all", function(data) {
       row.append("<li>" + data[i].ingredient4 + "</li>");
       row.append("<li>" + data[i].ingredient5 + "</li>");
       row.append("<li>" + data[i].ingredient6 + "</li>");
+      row.append("<li>" + data[i].Instruction + "</li>");
       
 
       $("#customer-createdDrink").prepend(row);
