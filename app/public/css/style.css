@@ -5,7 +5,14 @@ body{
 li {
 	margin-left: 10px;
 }
+.bar-list {
+	padding-top: 5px;
+	margin:20px;
+}
+
+
 .bar-search {
+	    width: 50%;
 	background: green;
 	font-size: 24px;
 	color:white;
@@ -63,7 +70,6 @@ h6 {
 }
 .form-control1 {
 	margin-left: 50px;
-	font-family: 'Marck Script', cursive;
 	/* margin-top: 10px; */
 	width: 80%;
 }
@@ -82,14 +88,14 @@ h3 {
 }
 .show-names {
 	margin-left: 100px;
-	color:black;
+	color:white;
 	font-family: 'Marck Script', cursive;
 }
 .drink-name {
 	font-family: sans-serif;
 	margin-top: 20px;
 	margin-right: 40%;
-	background-color: white;
+
 	font-size: 24px;
 }
 .show-recipes {
@@ -109,7 +115,9 @@ h1 {
 	color: #DAA520;
 }
 h2 {
-	margin-left: 100px;
+	    width: 100%;
+	    padding: 10px;
+    margin-left: 80px;
 	font-family: 'Marck Script', cursive;
 	background-color: green;
 	margin-top: 0px;
@@ -160,9 +168,8 @@ h2 {
 }
 .form-control {
 	margin-left: 100px;
-	font-family: 'Marck Script', cursive;
 	margin-top: 10px;
-	width:80%;
+	width:90%;
 }
 
 #add-btn{
@@ -221,4 +228,38 @@ h2 {
 	font-size: 100%;
 	line-height: 2.7;
 	margin-left: 40%;
+}
+/*media query for ipad*/
+@media screen and (max-width: 768px){
+  h1{
+    
+}
+
+}
+
+/*media query for iphone 6 plus*/
+@media screen and (max-width: 414px){
+  .form-control{
+ margin-left:50px;
+
+  }
+  h2 {
+  	margin-left: 50px;
+  }
+#search-name-btn  {
+	margin-left: 40px;
+}
+
+
+
+}
+
+/*media query for iphone 6 */
+@media screen and (max-width: 375px) {
+  h1 {
+
+    
+
+  }
+
 }

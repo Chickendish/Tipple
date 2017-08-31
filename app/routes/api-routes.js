@@ -6,20 +6,35 @@ module.exports = function(app){
 			res.json(results);
 		});
 		 });
-// when a customer wants to search a specific type of cock
-  app.get("/api/:cocktails", function(req, res) {
-    if (req.params.name) {
-      cocktails.findAll({
-        where: {
-          name: req.params.cocktails
-        }
-      }).then(function(results) {
-        res.json(results);
-      });
-    }
- 
+// when a customer wants to search a specific type of cocktail
+ //  app.get("/api/:cocktails", function(req, res) {
+ //    if (req.params.name) {
+ //      cocktails.findAll({
+ //        where: {
+ //          name: req.params.cocktails
+ //        }
+ //      }).then(function(results) {
+ //        res.json(results);
+ //      });
+ //    }
 
-	});
+	// });
+
+  // when a customer wants to search a specific cocktail
+    app.get("/api/:id", function(req, res) {
+      if (req.params.id) {
+        tipple.findAll({
+          where: {
+            id: req.params.id
+          }
+        }).then(function(results) {
+          res.json(results);
+        });
+      }
+
+  	});  
+
+
 // POST you favorite cocktail
 app.post("/api/new", function(req, res) {
 	tipple.create({

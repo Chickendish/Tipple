@@ -3,6 +3,22 @@
 // When user clicks add-btn
 $("#create-cocktail").on("click", function(event) {
   event.preventDefault();
+    // Make a newBook object
+  var newDrink = {
+    name: $("#name").val().trim(),
+    ingredient1: $("#ingredient1").val().trim(),
+    ingredient2: $("#ingredient2").val().trim(),
+    ingredient3: $("#ingredient3").val().trim(),
+    ingredient4: $("#ingredient4").val().trim(),
+    ingredient5: $("#ingredient5").val().trim(),
+    ingredient6: $("#ingredient6").val().trim(),
+    Instruction: $("#Instruction").val().trim()
+  };
+  
+
+$.post("/api/new", newDrink)
+.done(function(data) {
+});
   // lets display this on the page
 $.get("/api/all", function(data) {
 
@@ -29,22 +45,7 @@ $.get("/api/all", function(data) {
 
 });
 
-  // Make a newBook object
-  var newDrink = {
-    name: $("#name").val().trim(),
-    ingredient1: $("#ingredient1").val().trim(),
-    ingredient2: $("#ingredient2").val().trim(),
-    ingredient3: $("#ingredient3").val().trim(),
-    ingredient4: $("#ingredient4").val().trim(),
-    ingredient5: $("#ingredient5").val().trim(),
-    ingredient6: $("#ingredient6").val().trim(),
-    Instruction: $("#Instruction").val().trim()
-  };
 
-
-$.post("/api/new", newDrink)
-.done(function(data) {
-});
 // empty the box
 $("#name").val("");
 $("#ingredient1").val("");
